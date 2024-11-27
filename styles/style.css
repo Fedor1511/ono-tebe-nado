@@ -13,31 +13,25 @@ body {
     padding: 92px 24px 96px 24px;
 }
 
-.header_menu {
-    width: 391.48px;
-    height: 22px;
-    /*padding: 44px 634px 39px 26.52px;*/
-}
-
 .header_links-list {
     display: grid;
-    grid-template-columns: 67px 169px 129px;
-    justify-items: center;
+    grid-template-columns: 67px 182.48px 142px;
+    width: 391.49px;
+    height: 22px;
+    justify-items: right;
     padding-top: 44px;
     padding-bottom: 39px;
     padding-left: 26.52px;
 }
 
 .header__links-list-item {
-    
+    font-family: Raleway, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .header__links-list-item_no-bullet {
     list-style-type: none;
-}
-
-.header_link {
-    
 }
 
 .header__link_active {
@@ -109,19 +103,25 @@ body {
 }
 
 .aligned-text_center {
+    width: 369px;
+    height: 100px;
+    padding-left: 286px;
     text-align: center;
 }
 
 .aligned-text_right {
+    width: 417px;
+    height: 100px;
     text-align: right;
+    padding-left: 583px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 2rem;
+    letter-spacing: 1.5rem;
 }
 
 .no-letter-spacing {
-    
+    padding-left: 45px;
 }
 
 .cover__description {
@@ -191,8 +191,6 @@ body {
     color: #ffffff;
 }
 
-.card-link {}
-
 .card_type_film {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -240,7 +238,6 @@ body {
     font-weight: normal;
     font-size: 20px;
 }
-
 
 .lots__look-more-link {
     font-family: Raleway;
@@ -326,12 +323,6 @@ body {
     list-style-type: none;
 }
 
-.footer__menu-list-item {}
-
-.footer__menu-link {}
-
-.footer__menu-link_active {}
-
 .footer__social-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -345,7 +336,3 @@ body {
     width: 48px;
     height: 48px;
 }
-
-.footer__social-link {}
-
-.footer__social-icon {}
