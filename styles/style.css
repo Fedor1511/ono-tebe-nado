@@ -1,15 +1,7 @@
 /* место для вашего кода */
-body {
-    background-color: #ffffff;
-    margin: auto;
-    min-width: 1100;
-    min-height: 3028px;
-}
-
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 105px;
     padding: 92px 24px 96px 24px;
 }
 
@@ -17,7 +9,6 @@ body {
     display: grid;
     grid-template-columns: 67px 182.48px 142px;
     width: 391.49px;
-    height: 22px;
     justify-items: right;
     padding-top: 44px;
     padding-bottom: 39px;
@@ -28,50 +19,46 @@ body {
     font-family: Raleway, sans-serif;
     font-weight: normal;
     font-size: 18px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    list-style-type: circle;
 }
 
 .header__links-list-item_no-bullet {
     list-style-type: none;
 }
 
-.header__link_active {
-    text-decoration: underline;
-    list-style-type: circle;
-}
-
 .header_logo {
-    width: 148px;
-    height: 105px;
+    width: 129.11px;
+    height: 104.65px;
     padding: 5px 184px 2px 36px;
 }
 
-.header_logo-image {
-    width: 129.11px;
-    height: 104.65px;
-    padding: 1.16px 9.86px 0.81px 9.03px;
-}
-
 .address {
-    width: 240.52px;
-    height: 98px;
-    padding: 5px 25.48px 2px 0;
+    font-size: 18.5px;
 }
 
 .header_address {
-    height: 98px;
     display: grid;
     align-items: center;
+    font-style: normal;
 }
 
-.header_address-item {
-    width: 240px;
-    height: 24px;
+.footer_address {
+    display: grid;
+    align-items: center;
+    font-style: normal;
+}
+
+.address__link {
     text-decoration: underline;
+    text-underline-offset: 4px;
+    height: 24px;
 }
 
-.header_address-item-add {
-    width: 237px;
+.address__text {
     height: 49px;
+    padding-right: 52.52px;
 }
 
 .cover {
@@ -86,12 +73,11 @@ body {
 .cover__title {
     display: grid;
     color: #ffffff;
-    width: 1000px;
-    height: 355px;
+    width: 1100px;
     padding-top: 165px;
     padding-right: 50px;
-    padding-left: 50px;
-    text-align:justify;
+    /*padding-left: 50px;*/
+    text-align: justify;
     /*padding: 165px 50px 237px 50px;*/
 }
 
@@ -100,73 +86,59 @@ body {
     font-weight: bold;
     font-size: 100px;
     text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 115%;
+    padding-left: 50px;
 }
 
 .aligned-text_center {
-    width: 369px;
-    height: 100px;
-    padding-left: 286px;
     text-align: center;
+    padding-left: 44.5px;
 }
 
 .aligned-text_right {
-    width: 417px;
-    height: 100px;
     text-align: right;
-    padding-left: 583px;
-}
-
-.letter-spacing-extended {
-    letter-spacing: 1.5rem;
-}
-
-.no-letter-spacing {
-    padding-left: 45px;
+    
 }
 
 .cover__description {
    display: grid;
+   grid-template-columns: 637px 256px;
    color: #ffffff;
-   width: 637px;
-   height: 28px;
-   padding-top: 147px;
-   padding-left: 78px;
+   width: 1000px;
+   padding: 106px 50px 50px 50px;
 }
 
 .cover__description-text {
     font-family: Raleway;
     font-weight: normal;
     font-size: 22px;
-    text-align: center;
     word-spacing: 15px;
     text-transform: uppercase;
+    padding-top: 11px;
 }
 
 .bet-button {
     color: #ffffff;
     border-width: 1px;
+    border-style: dashed;
     border-color: #ffffff;
-    display: grid;
     align-items: center;
     width: 256px;
     height: 51px;
     position: relative;
-    bottom: 51px;
-    left: 794px;
     background: transparent;
-}
-
-.bet-button-text {
     font-family: Raleway;
-    font-weight: medium;
+    font-weight: normal;
     font-size: 22px;
     text-transform: uppercase;
+    margin-left: 107px;
 }
 
 .lots {
     width: 1052px;
-    height: 692px;
-    padding: 230px 33px 95px 15px;
+    height: 723px;
+    padding: 180px 24px 120px 24px;
 }
 
 .lots__heading {
@@ -175,19 +147,21 @@ body {
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
-    padding: 0 891px 21px 40px;
+    padding: 0 891px 27px 40px;
 }
 
 .lots__card-list {
     display: flex;
+    flex-wrap: wrap;
     justify-items: center;
     list-style-type: none;
     gap: 25px;
+    padding-bottom: 30px;
 }
 
 .lots__card-list-item {
     width: 334px;
-    height: 563px;
+    height: 596px;
     color: #ffffff;
 }
 
@@ -216,7 +190,7 @@ body {
 }
 
 .card__title {
-    padding: 51px 40px 0 40px;
+    padding: 48px 40px 0 40px;
     font-family: Raleway;
     font-weight: bold;
     font-size: 22px;
@@ -229,14 +203,7 @@ body {
     font-family: Raleway;
     font-weight: normal;
     font-size: 20px;
-}
-.card__text1 {
-    display: grid;
-    align-items: end;
-    padding: 0 40px 48px 40px;  
-    font-family: Raleway;
-    font-weight: normal;
-    font-size: 20px;
+    align-content: end;
 }
 
 .lots__look-more-link {
@@ -244,20 +211,17 @@ body {
     font-weight: medium;
     font-size: 20px;
     text-decoration: underline;
-    padding-top: 30px;
-    padding-left: 40px;
+    padding: 30px 820px 0px 40px;
 }
 
 .about {
     width: 1052px;
-    height: 595px;
-    padding: 0 24px 180px 24px;
+    padding: 0 23px 158px 25px;
 }
 
 .about__column {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about__logo {
@@ -266,6 +230,7 @@ body {
     padding-top: 35px;
     padding-left: 47px;
     padding-right: 72px;
+    padding-bottom: 8px;
 }
 
 .about__logo-image {
@@ -278,7 +243,6 @@ body {
 
 .about__title {
     width: 291px;
-    height: 47px;
     font-family: Raleway;
     font-weight: bold;
     font-size: 40px;
@@ -286,21 +250,22 @@ body {
     padding: 136px 402px 100px 0;
 }
 
-.about__text1 {
-    height: 120px;
+.about__text {
     font-family: Raleway;
     font-weight: medium;
     font-size: 20px;
     grid-column-start: 2;
-    padding-bottom: 24px;
+    padding-left: 359px;
+    padding-right: 5px;
 }
 
-.about__text2 {
-    height: 168px;
+.text_nizhe {
     font-family: Raleway;
     font-weight: medium;
     font-size: 20px;
     grid-column-start: 2;
+    padding-top: 24px;
+    padding-left: 359px;
 }
 
 .footer {
@@ -308,14 +273,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
     justify-content: space-between;
-    height: 98px;
-    padding: 0 50px 88px 50px;
+}
+
+.footer_address {
+    padding-left: 50px;
+    padding-bottom: 82px;
 }
 
 .footer__menu {
     display: grid;
     width: 333px;
-    height: 64px;
     text-align: center;
 }
 
@@ -328,11 +295,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     justify-items: right;
     width: 333px;
-    height: 48px;
     list-style-type: none;
 }
 
-.footer__social-list-item {
+.footer__social-icon {
     width: 48px;
     height: 48px;
 }
