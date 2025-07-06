@@ -1,1 +1,1 @@
-https://github.com/Fedor1511/ono-tebe-nado
+https://github.com/Fedor1511/ono-tebe-nado-fd
